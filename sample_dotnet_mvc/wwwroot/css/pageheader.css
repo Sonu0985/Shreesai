@@ -1,9 +1,11 @@
 ﻿
 
-#header-div {
+.header-div {
     display: flex;
     flex-direction: row;
     background-color: #663300;
+    margin-top:0px;
+    margin-bottom:-1px;
 }
 
 #image-size {
