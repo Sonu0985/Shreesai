@@ -2,7 +2,87 @@
   //ViewData["Title"] = "About";
   Layout="_Layout";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
+<div class='container'>
+  <div class='row centered-form'>
+    <div class='col-xs-10 col-sm-10'>
+      <div class='panel panel-default'>
+        <div class='panel-heading'>
+            <h2 class='panel-title'>@ViewData["Title"]</h2>
+        </div>
+        <div class='panel-body'>
+          <form role='form'>
+            <div class='row'>
+              <div class='col-xs-6 col-sm-6 col-md-6'>
+                <div class="form-group">
+                  <label>First Name:</label>
+                  <input type="text" name='first_name' class="form-control input-sm floatlabel" id="first_name" placeholder="First Name">
+                </div>
+              </div>
+              <div class='col-xs-6 col-sm-6 col-md-6'>
+                <div class='form-group'>
+                  <label>Last Name:</label>
+                   <input type="text" name='last_name' class="form-control input-sm" id="last_name" placeholder="Last Name">
+                </div>
+              </div>
+              </div>
+              <div class='form-group'>
+                <label>Email ID:</label>
+                <input type='text' name='email' id='email' class='form-control input-sm' placeholder="Email ID">
+              </div>
+              <div class='form-group'>
+                <label>Address:</label>
+                <input type='text' name="address_line_1" id='address_line_1' class='form-control input-sm' placeholder='Address Line 1'>
+              </div>
+              <div class='form-group'>
+                <input type='text' name="address_line_2" id='address_line_2' class='form-control input-sm' placeholder="Address Line 2">
+              </div>
+              <div class='row'>
+                <div class='col-xs-4 col-sm-4 col-md-4'>
+                  <div class='form-group'>
+                    <label>State:</label>
+                    <input type='text' name='state' class='form-control input-sm floatlabel' id='state' placeholder="State">
+                  </div>
+                </div>
+                <div class='col-xs-4 col-sm-4 col-md-4'>
+                  <div class='form-group'>
+                    <label>Country:</label>
+                    <input type='text' name='country' class='form-control input-sm ' id='country' placeholder="Country">
+                  </div>
+                </div>
+                <div class='col-xs-4 col-sm-4 col-md-4'>
+                  <div class='form-group'>
+                    <label>Zipcode:</label>
+                    <input type='text' name='zipcode' class='form-control input-sm ' id='zipcode' placeholder="Zipcode">
+                  </div>
+                </div>
+              </div>
+                <div class='form-group'>
+                  <label>Phone Number:</label>
+                  <input type='text' name="phoneNumber" id='phoneNumber' class='form-control input-sm' placeholder="Phone Number">
+                </div>
+              <div class='row'>
+                <div class='col-xs-2 col-sm-2 col-md-2'>
+                  <div class='form-group'>
+                    <label>Amount(INR)</label>
+                    <input type='text' name='amount' id='amount' class='form-control input-sm' placeholder="Amount">
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+                <div class='form-group'>
+                  <input type='submit' value='Submit Payment' id='paynow' class='btn btn-info btn-block'>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div
 
-<p>Use this area to provide additional information.</p>
+<div class="form-group">
+  <label>Currency</label>
+  <input type='text' class='form-control' id='currency' placeholder='Currency'>
+  <button type='button' class='btn btn-success'>Pay With InstaMojo</button>
+ </div>
