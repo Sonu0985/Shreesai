@@ -31,8 +31,7 @@ namespace sample_dotnet_mvc.Controllers
 
         public IActionResult Donation()
         {
-            ViewData["Title"] = "Donation";
-            ViewData["Message"] = "Site Under Development";
+            ViewData["Title"] = "Donation Account Information";
             return View();
         }
 
