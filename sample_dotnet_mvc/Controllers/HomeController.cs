@@ -37,7 +37,7 @@ namespace sample_dotnet_mvc.Controllers
 
         public IActionResult About()
         {
-            ViewData["Title"] = "About-New";
+            ViewData["Title"] = "About Us";
             ViewData["Message"] = "Your application description page.";
 
             return View();
